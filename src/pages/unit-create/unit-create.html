@@ -1,0 +1,104 @@
+<!--
+  Generated template for the UnitCreate page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>New Unit</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="outer-content">
+  <ion-list>
+    <ion-list-header>Name</ion-list-header>
+    <ion-item>
+      <ion-input [(ngModel)]="unit.name"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>Special Rules</ion-list-header>
+    <ion-item>
+      <ion-input [(ngModel)]="unit.specialRuleonis"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>BS</ion-list-header>
+    <ion-item>
+      <ion-range [(ngModel)]="unit.bs" min="0" max="20" pin="true">
+        <ion-icon range-left></ion-icon>
+        <ion-icon range-right></ion-icon>
+      </ion-range>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>WS</ion-list-header>
+    <ion-item>
+      <ion-range [(ngModel)]="unit.ws" min="0" max="20" pin="true">
+        <ion-icon range-left></ion-icon>
+        <ion-icon range-right></ion-icon>
+      </ion-range>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>I</ion-list-header>
+    <ion-item>
+      <ion-range [(ngModel)]="unit.i" min="0" max="20" pin="true">
+        <ion-icon range-left></ion-icon>
+        <ion-icon range-right></ion-icon>
+      </ion-range>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>A</ion-list-header>
+    <ion-item>
+      <ion-range [(ngModel)]="unit.a" min="0" max="20" pin="true">
+        <ion-icon range-left></ion-icon>
+        <ion-icon range-right></ion-icon>
+      </ion-range>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>W</ion-list-header>
+    <ion-item>
+      <ion-range [(ngModel)]="unit.w" min="0" max="20" pin="true">
+        <ion-icon range-left></ion-icon>
+        <ion-icon range-right></ion-icon>
+      </ion-range>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>LD</ion-list-header>
+    <ion-item>
+      <ion-range [(ngModel)]="unit.ld" min="0" max="20" pin="true">
+        <ion-icon range-left></ion-icon>
+        <ion-icon range-right></ion-icon>
+      </ion-range>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>SV</ion-list-header>
+    <ion-item>
+      <ion-range [(ngModel)]="unit.sv" min="0" max="20" pin="true">
+        <ion-icon range-left></ion-icon>
+        <ion-icon range-right></ion-icon>
+      </ion-range>
+    </ion-item>
+  </ion-list>
+
+  <div padding>
+    <button ion-button block color="primary" (click)="create()" [disabled]="!unit.name">Create</button>
+  </div>
+</ion-content>

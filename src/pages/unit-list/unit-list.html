@@ -1,0 +1,20 @@
+<!--
+  Generated template for the UnitList page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Units</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+    <button ion-item *ngFor="let unit of units" (click)="showDetail(unit)">{{unit.name}}</button>
+  </ion-list>
+</ion-content>
