@@ -26,7 +26,7 @@ export class UnitCreatePage {
   create() {
     this.unitService.addUnit(this.unit)
       .then(() => {
-        this.navCtrl.setRoot(UnitListPage);
+        this.navCtrl.parent.select(0);
       });
   }
 }
