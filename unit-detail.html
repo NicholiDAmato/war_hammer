@@ -1,0 +1,41 @@
+<!--
+  Generated template for the UnitDetail page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{unit.squad}} : {{unit.type}} : {{unit.name}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-grid>
+      <ion-row>
+          <ion-col width>Name</ion-col>
+          <ion-col width>BS</ion-col>
+          <ion-col width>WS</ion-col>
+          <ion-col width>I</ion-col>
+          <ion-col width>A</ion-col>
+          <ion-col width>W</ion-col>
+          <ion-col width>LD</ion-col>
+          <ion-col width>SV</ion-col>
+      </ion-row>
+      <ion-row *ngFor="let unit of units">
+          <ion-col width>{{unit.name}}</ion-col>
+          <ion-col width>{{unit.bs}}</ion-col>
+          <ion-col width>{{unit.ws}}</ion-col>
+          <ion-col width>{{unit.i}}</ion-col>
+          <ion-col width>{{unit.a}}</ion-col>
+          <ion-col width>{{unit.w}}</ion-col>
+          <ion-col width>{{unit.ld}}</ion-col>
+          <ion-col width>{{unit.sv}}</ion-col>
+      </ion-row>
+
+
+</ion-grid>
+</ion-content>
